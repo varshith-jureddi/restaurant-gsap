@@ -51,4 +51,44 @@ const snackList = [
   },
 ];
 
-export { navLinks, tiffinList, snackList };
+const menuItems = [
+  {
+    id: 1,
+    name: "Dosa",
+    image: "dosa.png",
+    title: "Dosa",
+    description: "Coconut chutney,palli chutney",
+  },
+  {
+    id: 2,
+    name: "Masala Dosa",
+    image: "masaladosa.png",
+    title: "Masala Dosa",
+    description: "potato curry",
+  },
+  //  {
+  //   name: "punugulu",
+  //   detail: "coconut/palli",
+  //   price: "$30",
+  // },
+  // {
+  //   name: "MAsala Dosa",
+  //   detail: "potato curry",
+  //   price: "$50",
+  {
+    id: 3,
+    name: "Bonda",
+    image: "bonda.png",
+    title: "bonda",
+    description: "palli chutney ,allam chutney",
+  },
+  {
+    id: 4,
+    name: "Punugulu",
+    image: "punugulu.png",
+    title: "Punugul",
+    description: "kobbari chutney/ palli chutney",
+  },
+];
+
+export { navLinks, tiffinList, snackList, menuItems };

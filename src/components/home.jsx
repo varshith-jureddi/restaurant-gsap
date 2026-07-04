@@ -22,7 +22,7 @@ export default function Home(){
             stagger:0.06
 
         })
-    },[]);
+    })
     return(
         <section id="hero">
             <h1 className="title">DOSA DOSE</h1>

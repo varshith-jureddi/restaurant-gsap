@@ -8,24 +8,32 @@ export default function Tiffins(){
     useGSAP(()=>{
         const trigg = gsap.timeline({
             scrollTrigger:{
-                trigger:"#tiffins",
-                start:"top 30%",
-                end: "bottom 80%",
-                scrub:true
+                trigger:'#tiffins',
+                start:'top 30%',
+                end: 'bottom 80%',
+                scrub:true,
+                // marker:true
             }
-        });
+        })
 
-        trigg.from("#t-left-leaf",{x:-200,y:200})
-             .from('#t-right-leaf', {x:200,y:200},.01)
+        trigg
+            .from("#t-left-leaf",
+                {
+                    x:-200,y:200
+                })
+            .from("#t-right-leaf", 
+                {
+                    x:200,y:-200
+                },.01)
 
-    },[]);
+    });
 
     return(
         
         <>
-        <section id="tiffins" className="noisy">
+        <section id="tiffins" className="">
         <img src="/images/tiffins-left-leaf.png" alt="left-leaf" id="t-left-leaf" className="absolute left-0 md:bottom-0 md:top-auto -top-20 md:w-fit w-1/3"/>
-        <img src="/images/tiffins-right-leaf.png" alt="right-leaf" id="t-right-leaf" className="absolute right-0 md:bottom-0 md:top-auto -bottom-20 md:w-fit w-1/3"/>
+        <img src="/images/tiffins-right-leaf.png" alt="right-leaf" id="t-right-leaf" className="absolute  rotate-270 right-0  md:top-0 -bottom-20 md:w-fit w-1/3"/>
 
 
             <div className="list">
@@ -54,7 +62,7 @@ export default function Tiffins(){
                             snackList.map((i) => (
                                 <li key={i.name}>
                                 <div className="md:me-28">
-                                    <h3>{i.name}</h3>
+                                    <h3 className="text-background">{i.name}</h3>
                                     <p>{i.detail}</p>
                                 </div>
                                 <span>- {i.price}</span>

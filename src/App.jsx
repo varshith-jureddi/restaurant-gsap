@@ -1,7 +1,14 @@
+import { ScrollTrigger, SplitText } from "gsap/all";
+import gsap from "gsap";
+
 import About from "./components/about";
 import Home from "./components/home";
 import Navbar from "./components/Navbar";
 import Tiffins from "./components/tiffins";
+import Menu from "./components/menu";
+
+
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
   return (
@@ -10,6 +17,7 @@ const App = () => {
       <Home/>
       <Tiffins/>
       <About/>
+      {/* <Menu/> */}
       {/* <div className="min-h-screen flex items-center justify-center">
       <Home/>
       </div> */}
