@@ -2,7 +2,7 @@ export default function About(){
     return(
         
       <>
-        <div id="about" className="min-h-screen py-28 px-8 mx-auto container">
+        <div id="about" className="min-h-screen py-28 px-8 mx-auto container -z-10">
           <div className="mb-20 md:px-0 px-5">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
               <div className="md:col-span-8">

@@ -24,6 +24,7 @@ body {
   /* color: darkslategrey; */
   background-color: #fdfbf7;
   color: #0b4141;
+  /* color: var(--foreground); */
   scroll-behavior: smooth;
   overflow-x: hidden;
   /* overflow-y: hidden; */

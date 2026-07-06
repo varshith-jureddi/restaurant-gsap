@@ -4,6 +4,15 @@ import { SplitText } from "gsap/all";
 
 export default function Home(){
     useGSAP(()=>{
+        const trigg= gsap.timeline({
+            scrollTrigger:{
+                trigger:".leaf",
+                start:"top 10",
+                end:"bottom 50",
+                scrub:true,
+                pin:true
+            }
+        })
         const titleSplit= new SplitText('.title',{type:'chars,words'});
         const textSplit=new SplitText('.text', {type:'words,lines'});
         gsap.from(titleSplit.chars,
@@ -22,8 +31,13 @@ export default function Home(){
             stagger:0.06
 
         })
+        trigg.from('.leaf',{
+            xPercent:-100,
+            
+        })
     })
     return(
+        <>
         <section id="hero">
             <h1 className="title">DOSA DOSE</h1>
             <div className="body">
@@ -48,5 +62,9 @@ export default function Home(){
                     </div>
                 </div>
         </section>
+        {/* <div className="absolute inset-0 bottom-0 left-0 md:object-contain object-bottom object-cover">
+            <img src="/images/banana-leaf-1.png" alt="banana leaf" className="leaf" />
+        </div> */}
+        </>
     )
 }

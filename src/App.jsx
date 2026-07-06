@@ -6,6 +6,8 @@ import Home from "./components/home";
 import Navbar from "./components/Navbar";
 import Tiffins from "./components/tiffins";
 import Menu from "./components/menu";
+import Contact from "./components/contact";
+
 
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -17,7 +19,8 @@ const App = () => {
       <Home/>
       <Tiffins/>
       <About/>
-      {/* <Menu/> */}
+      <Menu/>
+      <Contact/>
       {/* <div className="min-h-screen flex items-center justify-center">
       <Home/>
       </div> */}

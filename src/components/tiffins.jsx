@@ -31,13 +31,13 @@ export default function Tiffins(){
     return(
         
         <>
-        <section id="tiffins" className="">
+        <section id="tiffins" className="text-foreground">
         <img src="/images/tiffins-left-leaf.png" alt="left-leaf" id="t-left-leaf" className="absolute left-0 md:bottom-0 md:top-auto -top-20 md:w-fit w-1/3"/>
         <img src="/images/tiffins-right-leaf.png" alt="right-leaf" id="t-right-leaf" className="absolute  rotate-270 right-0  md:top-0 -bottom-20 md:w-fit w-1/3"/>
 
 
             <div className="list">
-                <div className="popular">
+                <div className="popular font-modern-negra">
                     <h2>Most Popular Tiffins</h2>
                     <ul>
                         {
@@ -47,7 +47,7 @@ export default function Tiffins(){
                                     <h3>{i.name}</h3>
                                     <p>{i.detail}</p>
                                 </div>
-                                <span>- {i.price}</span>
+                                <span className="font-sans">- {i.price}</span>
                                 
                             </li>
                             )
@@ -55,7 +55,7 @@ export default function Tiffins(){
                     }
                     </ul>
                 </div>
-                <div className="loved">
+                <div className="loved font-modern-negra">
                     <h2>Most Popular Snacks</h2>
                     <ul>
                         {
@@ -65,7 +65,7 @@ export default function Tiffins(){
                                     <h3 className="text-background">{i.name}</h3>
                                     <p>{i.detail}</p>
                                 </div>
-                                <span>- {i.price}</span>
+                                <span className="font-sans">- {i.price}</span>
                                 
                             </li>
                             )
