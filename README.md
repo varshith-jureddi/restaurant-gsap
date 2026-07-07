@@ -19,9 +19,9 @@ A Landing page with a tiffin theme using gsap animations for a premium looking u
 
 
 ## Tech Stack
-[![My Skills](https://skillicons.dev/icons?i=react,tailwind,typescript,&perline=4)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=react,tailwind,javascript,&perline=4)](https://skillicons.dev)
 
-React, TailwindCSS, GSAP, TypeScript
+React, TailwindCSS, GSAP, JavaScript
 
 
 
